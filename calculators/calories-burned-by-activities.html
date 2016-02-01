@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Activity - Body mass calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kristin Corona">
+    
+    <!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../fontello/css/fontello.css" rel="stylesheet" > 
+    
+    <!-- Calculators CSS -->
+    <link rel="stylesheet" href="css/calculators.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+                    
+                    <form>
+                   <div class="container-fluid">
+         			<div class="row row_in_widget" style="padding-top:15px;">
+                    
+                        <div class="col-md-6">
+                            <div class="form-group"><input type="text" name="Weight" class="form-control" placeholder="Weight*"></div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="styled-select">
+                                    <select class="form-control" name="weight_select">
+                                        <option value="pounds">Pounds (lb)</option>
+                                        <option value="kilo">Kilos (KG)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- End row -->
+                    
+                    <div id="activies" class="row row_in_widget clearfix">
+                        <div class="col-md-6">
+                        
+                        	<div class="form-group">
+                            <div class="hours">Hours <input type="text" name="hours_sleep" value="0"></div>
+                            <input type="checkbox" name="sleep" id="sleep"><label for="sleep"><span></span>Sleeping</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" name="hours_watchtv" value="0"></div>
+                            <input type="checkbox" name="watchtv" id="watchtv"><label for="watchtv"><span></span>Watching TV</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_destwork" value="0"></div>
+                            <input type="checkbox" name="destwork" id="destwork"><label for="destwork"><span></span>Typing, Writing, Desk Work</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking17" value="0"></div>
+                            <input type="checkbox" name="walking17" id="walking17"><label for="walking17"><span></span>Walking, very slow, 1.7mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking25" value="0"></div>
+                            <input type="checkbox" name="walking25" id="walking25"><label for="walking25"><span></span>Walking, 2.5mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_bike50" value="0"></div>
+                            <input type="checkbox" name="bike50" id="bike50"><label for="bike50"><span></span>Bicycling, very slow, 50 watts</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking30" value="0"></div>
+                            <input type="checkbox" name="walking30" id="walking30"><label for="walking30"><span></span>Walking, 3.0 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_home_exercise" value="0"></div>
+                            <input type="checkbox" name="home_exercise" id="home_exercise"><label for="home_exercise"><span></span>Calisthenics, home exercises</label>
+                            </div>
+                                                        
+                            </div><!-- End col-md-6 -->
+                            
+                            <div class="col-md-6">
+                                                       
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_walking34" value="0"></div>
+                            <input type="checkbox" name="walking34" id="walking34"><label for="walking34"><span></span>Walking 3.4 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours"> Hours <input type="text" class="textboxEffect" name="hours_bike10mph" value="0"></div>
+                            <input type="checkbox" name="bike10mph" id="bike10mph"><label for="bike10mph"><span></span>Bicycling, lower than 10 mph</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_bike100" value="0"></div>
+                            <input type="checkbox" name="bike100" id="bike100"><label for="bike100"><span></span>Bicycling, stationary(100 watts)</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_jogging" value="0"> </div>
+                            <input type="checkbox" name="jogging" id="jogging"><label for="jogging"><span></span>Jogging, general</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_calisthenics" value="0"></div>
+                            <input type="checkbox" name="calisthenics" id="calisthenics"><label for="calisthenics"><span></span>Heavy calisthenics</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_jogging_run" value="0"></div>
+                            <input type="checkbox" name="jogging_run" id="jogging_run"><label for="jogging_run"><span></span>Running jogging, in place</label>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="hours">Hours <input type="text" class="textboxEffect" name="hours_rope_jump" value="0"></div>
+                            <input type="checkbox" name="rope_jump" id="rope_jump"><label for="rope_jump"><span></span>Rope jumping</label>
+                            </div>
+                            
+                        </div><!-- End col-md-6 -->
+                        <input type="hidden" name="calculator" value="easy_burned"/>
+                    </div><!-- End activities -->
+           		 </form>
+                                 
+                <div class="row row_in_widget">
+                <div class="col-md-12">
+                	<hr><p><em>*Remember to fill the hours input field.</em></p>
+                    <div class="text-center"><button id="selectBtn" class="button_medium">Calculate</button></div>
+                </div>
+                </div><!-- End row -->
+             	
+                <div class="result">
+                    <h3>Result for Total calorie burned</h3>
+                    <div id="easy_cal_burned">0.0</div>
+                    
+                    <div id="activietes_detail" style="padding-bottom:30px;">
+                        <div class="col-lg-4 col-md-12 text-left">
+                            <h4>Light Intensity <span id="lia_total">0.0</span></h4>
+                            <ul>
+                                <li>Sleeping <span id="sleep_value"> 0.0</span></li>
+                                <li>Watching television <span id="watchtv_value"> 0.0</span></li>
+                                <li>Writing, desk work, typing <span id="destwork_value"> 0.0</span></li>
+                                <li>Walking, 1.7 mph(2.7km/h) <span id="walking17_value"> 0.0</span></li>
+                                <li>Walking, 2.5 mph <span id="walking25_value"> 0.0</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-left">
+                            <h4>Moderate Intensity <span id="mia_total">0.0</span></h4>
+                            <ul>
+                                <li>Bicycling, 50 watts <span id="bike50_value">0.0</span></li>
+                                <li>Walking 3.0 mph <span id="walking30_value">0.0</span></li>
+                                <li>Calisthenics, home exercise <span id="home_exercise_value">0.0</span></li>
+                                <li>Walking 3.4 mph <span id="walking34_value">0.0</span></li>
+                                <li>Bicycling <span id="bike10mph_value">0.0</span></li>
+                                <li>Bicycling, 100watts <span id="bike100_value">0.0</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-left">
+                            <h4>Vigorous Intensity <span id="via_total">0.0</span></h4>
+                            <ul>
+                                <li>Jogging, general<span id="jogging_value">0.0</span></li>
+                                <li>Heavy calisthenics <span id="calisthenics_value">0.0</span></li>
+                                <li>Running jogging <span id="jogging_run_value">0.0</span></li>
+                                <li>Rope jumping <span id="rope_jump_value">0.0</span></li>
+                            </ul>
+                        </div>
+                </div><!-- End result -->
+         
+</div><!-- End container fluid -->
+
+<!-- CALCULATOR JS --> 
+<script src="js/jquery-1.10.min.js"></script>
+<script src="js/calories_calculators.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script>
+$(document).ready(function(){   
+		//Pace holder
+		$('input, textarea').placeholder();
+});
+</script>
+  </body>
+</html>

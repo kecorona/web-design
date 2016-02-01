@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Activity - Body mass calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kristin Corona">
+    
+    <!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../fontello/css/fontello.css" rel="stylesheet" > 
+    
+    <!-- Calculators CSS -->
+    <link rel="stylesheet" href="css/calculators.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+                    
+                    <div class="container-fluid">
+         			<div class="row row_in_widget" style="padding-top:15px;">
+                    <div class="col-md-6 col-sm-6">
+                        <form>
+                        	<div class="form-group"><input type="text" class="form-control" name="Age" placeholder="Age (Years)" ></div>
+                           	<div class="form-group"><input type="text" class="form-control" name="Weight" placeholder="Weight"></div>
+                            
+                            <div class="form-group">
+                                <div class="styled-select">
+                                    <select class="form-control" name="weight_select">
+                                        <option value="pounds">Pounds (lb)</option>
+                                        <option value="kilo">Kilos (KG)</option>
+                                    </select>
+                                </div>
+                                </div>
+                            
+                            <div class="form-group"><input type="text" class="form-control" name="Height" placeholder="Height"></div>
+                            
+                            <div class="form-group">
+                                <div class="styled-select">
+                                    <select class="form-control" name="height_select">
+                                        <option value="inches">By Inches</option>
+                                        <option value="cm">By Centimeters (cm)</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group add_top">
+                                <input type="radio" value="Male" name="Male" id="Male"><label for="Male" style="margin-right:30px;"><span></span>Male</label>
+                                <input type="radio" value="Female" name="Female" id="Female"><label for="Female"><span></span>Female</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="exercise_level">Activity Level</label>
+                                <div class="styled-select">
+                                    <select class="form-control" name="exercise_level">
+                                        <option value="nospec">None (stay in bed all day)</option>
+                                        <option value="sedentary">Sedentary (very little)</option>
+                                        <option value="light">Light (1 to 3 days per week)</option>
+                                        <option value="moderate">Moderate (3 to 5 days per week)</option>
+                                        <option value="hard">Hard (6 days per week)</option>
+                                        <option value="nonstop">Non-Stop (You are Energizer Bunny)</option>
+                                    </select>
+                                </div>
+                            </div>                            
+                            <input type="hidden" name="calculator" value="daily_calorie"/>
+                        </form>
+                    <button id="selectBtn" class="button_medium add_top">Calculate</button>
+                    </div><!-- End col-md-6 -->
+                    
+                    <div class="col-md-6 col-sm-6">
+                    
+                        <div class="result">
+                            <h3>Your Daily Calories</h3>
+                            <div id="your_cal_intake">0.0</div>
+                        </div>
+                        <div class="result">
+                            <h3>Lowest Daily Calories</h3>
+                            <div id="bmr_value">0.0</div>
+                        </div>
+                    </div><!-- End col-md-6-->
+                
+	              </div><!-- End row -->
+    </div><!-- End container fluid -->
+    
+<!-- CALCULATOR JS --> 
+<script src="js/jquery-1.10.min.js"></script>
+<script src="js/calories_calculators.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script>
+$(document).ready(function(){   
+		//Pace holder
+		$('input, textarea').placeholder();
+});
+</script>
+  </body>
+</html>
